@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9522ed68eb440a784ca4ab4f3b64db9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f9522ed68eb440a784ca4ab4f3b64db9" ></div>
+        
+</body>
+<script>    
+    
+            var map_f9522ed68eb440a784ca4ab4f3b64db9 = L.map(
+                "map_f9522ed68eb440a784ca4ab4f3b64db9",
+                {
+                    center: [24.786817, 120.997859],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+
+            
+
+        
+    
+            var tile_layer_e3de734f0e8349578abac37747b9d51c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var marker_e427da9ceec44826afcdde3a63cc87c9 = L.marker(
+                [24.788038, 121.0015],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_cc683b93b3544d67a9b718d9b1b33343 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e427da9ceec44826afcdde3a63cc87c9.setIcon(icon_cc683b93b3544d67a9b718d9b1b33343);
+        
+    
+        var popup_d0848afa0bc94d2393e5fc04c27d2175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efe9247ec37d4c188a9146f766dced46 = $(`<div id="html_efe9247ec37d4c188a9146f766dced46" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-D棚站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-D棚站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__01</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.788038</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.0015</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_d0848afa0bc94d2393e5fc04c27d2175.setContent(html_efe9247ec37d4c188a9146f766dced46);
+        
+
+        marker_e427da9ceec44826afcdde3a63cc87c9.bindPopup(popup_d0848afa0bc94d2393e5fc04c27d2175)
+        ;
+
+        
+    
+    
+            marker_e427da9ceec44826afcdde3a63cc87c9.bindTooltip(
+                `<div>
+                     交大-D棚站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b1624d59457428fb76c38c0bade6fc3 = L.marker(
+                [24.789055, 120.998047],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_173dbe85d3c34af58bfc84c8c65f5a2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b1624d59457428fb76c38c0bade6fc3.setIcon(icon_173dbe85d3c34af58bfc84c8c65f5a2f);
+        
+    
+        var popup_791899f20b12493a815f74049687cafc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aa7e53b06a54bcf8d2bcf41a163a458 = $(`<div id="html_5aa7e53b06a54bcf8d2bcf41a163a458" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-竹軒站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-竹軒站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__10</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.789055</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.998047</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_791899f20b12493a815f74049687cafc.setContent(html_5aa7e53b06a54bcf8d2bcf41a163a458);
+        
+
+        marker_0b1624d59457428fb76c38c0bade6fc3.bindPopup(popup_791899f20b12493a815f74049687cafc)
+        ;
+
+        
+    
+    
+            marker_0b1624d59457428fb76c38c0bade6fc3.bindTooltip(
+                `<div>
+                     交大-竹軒站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2893132dd3164949b83ead12d377b227 = L.marker(
+                [24.789087, 120.997221],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_3a93637899174b138209d32702b0ac67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2893132dd3164949b83ead12d377b227.setIcon(icon_3a93637899174b138209d32702b0ac67);
+        
+    
+        var popup_590f2a0e59a64210bbf37f0efdedea7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15801feabd524546a5df6c6bdea506c1 = $(`<div id="html_15801feabd524546a5df6c6bdea506c1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-二餐後門站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-二餐後門站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__11</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.789087</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.997221</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_590f2a0e59a64210bbf37f0efdedea7f.setContent(html_15801feabd524546a5df6c6bdea506c1);
+        
+
+        marker_2893132dd3164949b83ead12d377b227.bindPopup(popup_590f2a0e59a64210bbf37f0efdedea7f)
+        ;
+
+        
+    
+    
+            marker_2893132dd3164949b83ead12d377b227.bindTooltip(
+                `<div>
+                     交大-二餐後門站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_980434456912457084df02e86e337fb4 = L.marker(
+                [24.787204, 120.998626],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_80f83c4d962d4f8ea7465dc92759f80e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_980434456912457084df02e86e337fb4.setIcon(icon_80f83c4d962d4f8ea7465dc92759f80e);
+        
+    
+        var popup_daee4785005941769526ce929d65e689 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aba11f3f09404ca68e49687341e684b6 = $(`<div id="html_aba11f3f09404ca68e49687341e684b6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-人社一站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-人社一站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.787204</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.998626</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_daee4785005941769526ce929d65e689.setContent(html_aba11f3f09404ca68e49687341e684b6);
+        
+
+        marker_980434456912457084df02e86e337fb4.bindPopup(popup_daee4785005941769526ce929d65e689)
+        ;
+
+        
+    
+    
+            marker_980434456912457084df02e86e337fb4.bindTooltip(
+                `<div>
+                     交大-人社一站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c21f628605041b1a3f16f3e61fd609a = L.marker(
+                [24.786547, 121.000368],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_0aa55ccbd6e044dc9721225431329ad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c21f628605041b1a3f16f3e61fd609a.setIcon(icon_0aa55ccbd6e044dc9721225431329ad2);
+        
+    
+        var popup_a82d84f8aa7f4ae1bd788b27005688df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35e46059179f40ed98f7c48ad0e2c621 = $(`<div id="html_35e46059179f40ed98f7c48ad0e2c621" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-活中站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-活中站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__02</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.786547</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.000368</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_a82d84f8aa7f4ae1bd788b27005688df.setContent(html_35e46059179f40ed98f7c48ad0e2c621);
+        
+
+        marker_7c21f628605041b1a3f16f3e61fd609a.bindPopup(popup_a82d84f8aa7f4ae1bd788b27005688df)
+        ;
+
+        
+    
+    
+            marker_7c21f628605041b1a3f16f3e61fd609a.bindTooltip(
+                `<div>
+                     交大-活中站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73a32099c5804e4bb79e4aa1592e4d01 = L.marker(
+                [24.784155, 120.995947],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_7d3725d1a7904be0985417a20e8a769c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_73a32099c5804e4bb79e4aa1592e4d01.setIcon(icon_7d3725d1a7904be0985417a20e8a769c);
+        
+    
+        var popup_6d204d2c9c2d450a910e6490d599cd3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f20b7dcb8008421692413a56679706c1 = $(`<div id="html_f20b7dcb8008421692413a56679706c1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-十三舍站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-十三舍站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__06</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.784155</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.995947</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_6d204d2c9c2d450a910e6490d599cd3c.setContent(html_f20b7dcb8008421692413a56679706c1);
+        
+
+        marker_73a32099c5804e4bb79e4aa1592e4d01.bindPopup(popup_6d204d2c9c2d450a910e6490d599cd3c)
+        ;
+
+        
+    
+    
+            marker_73a32099c5804e4bb79e4aa1592e4d01.bindTooltip(
+                `<div>
+                     交大-十三舍站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccd6e2bbb3bc4a559634475ccfde1055 = L.marker(
+                [24.7849028, 121.0001034],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_fb90f734e88d441c89b9aba6986eee4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ccd6e2bbb3bc4a559634475ccfde1055.setIcon(icon_fb90f734e88d441c89b9aba6986eee4c);
+        
+    
+        var popup_3063e2142d454ee9b9fa8211a47fcd39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ad8bcf802d44c3c8edea4f507eb3003 = $(`<div id="html_6ad8bcf802d44c3c8edea4f507eb3003" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-女二舍站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-女二舍站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__03</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7849028</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.0001034</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_3063e2142d454ee9b9fa8211a47fcd39.setContent(html_6ad8bcf802d44c3c8edea4f507eb3003);
+        
+
+        marker_ccd6e2bbb3bc4a559634475ccfde1055.bindPopup(popup_3063e2142d454ee9b9fa8211a47fcd39)
+        ;
+
+        
+    
+    
+            marker_ccd6e2bbb3bc4a559634475ccfde1055.bindTooltip(
+                `<div>
+                     交大-女二舍站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e4ecd9c6f654c308af47d64cf6d21ae = L.marker(
+                [24.7854768, 120.9979821],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_f2b2d35fd36147f3965d1bb6a646a676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e4ecd9c6f654c308af47d64cf6d21ae.setIcon(icon_f2b2d35fd36147f3965d1bb6a646a676);
+        
+    
+        var popup_7dbbd0d64e4a492e9b939e4e0ca5ddf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f66e4dfa68c14f61bcca22cb0f7e1ff1 = $(`<div id="html_f66e4dfa68c14f61bcca22cb0f7e1ff1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-管二小徑站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-管二小徑站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__04</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7854768</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9979821</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_7dbbd0d64e4a492e9b939e4e0ca5ddf4.setContent(html_f66e4dfa68c14f61bcca22cb0f7e1ff1);
+        
+
+        marker_4e4ecd9c6f654c308af47d64cf6d21ae.bindPopup(popup_7dbbd0d64e4a492e9b939e4e0ca5ddf4)
+        ;
+
+        
+    
+    
+            marker_4e4ecd9c6f654c308af47d64cf6d21ae.bindTooltip(
+                `<div>
+                     交大-管二小徑站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bb3367b932544688cc7b428a7458752 = L.marker(
+                [24.7840702, 120.997104],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_75daebadf81a47bfb396d1575180e356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1bb3367b932544688cc7b428a7458752.setIcon(icon_75daebadf81a47bfb396d1575180e356);
+        
+    
+        var popup_02a293f5f0894812b8718da11647e8bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58234e8a03fd4b5396d3170a1a36364f = $(`<div id="html_58234e8a03fd4b5396d3170a1a36364f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-綜合一館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-綜合一館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__05</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7840702</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.997104</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_02a293f5f0894812b8718da11647e8bd.setContent(html_58234e8a03fd4b5396d3170a1a36364f);
+        
+
+        marker_1bb3367b932544688cc7b428a7458752.bindPopup(popup_02a293f5f0894812b8718da11647e8bd)
+        ;
+
+        
+    
+    
+            marker_1bb3367b932544688cc7b428a7458752.bindTooltip(
+                `<div>
+                     交大-綜合一館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4928e2a5d6c4c18bd66f982298d4013 = L.marker(
+                [24.787697, 120.9957894],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_6bb193e38f1b4665b4aa1fde6930a99d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4928e2a5d6c4c18bd66f982298d4013.setIcon(icon_6bb193e38f1b4665b4aa1fde6930a99d);
+        
+    
+        var popup_f949fbe3172f4117b19cdd0e0b35dede = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eea26882e28143b08815a27a3c358875 = $(`<div id="html_eea26882e28143b08815a27a3c358875" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-科學三館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-科學三館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__07</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.787697</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9957894</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_f949fbe3172f4117b19cdd0e0b35dede.setContent(html_eea26882e28143b08815a27a3c358875);
+        
+
+        marker_e4928e2a5d6c4c18bd66f982298d4013.bindPopup(popup_f949fbe3172f4117b19cdd0e0b35dede)
+        ;
+
+        
+    
+    
+            marker_e4928e2a5d6c4c18bd66f982298d4013.bindTooltip(
+                `<div>
+                     交大-科學三館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b7623148e3e4d4cbb820dc992339133 = L.marker(
+                [24.7896295, 120.9949284],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_d11cae15a8034bbdbe46a87c50f75682 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b7623148e3e4d4cbb820dc992339133.setIcon(icon_d11cae15a8034bbdbe46a87c50f75682);
+        
+    
+        var popup_317f539338274d3d9186b08a3826ca62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ec4796e52ed4b39a9ba8f403cef78ad = $(`<div id="html_1ec4796e52ed4b39a9ba8f403cef78ad" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-健身房站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-健身房站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__08</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7896295</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9949284</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_317f539338274d3d9186b08a3826ca62.setContent(html_1ec4796e52ed4b39a9ba8f403cef78ad);
+        
+
+        marker_0b7623148e3e4d4cbb820dc992339133.bindPopup(popup_317f539338274d3d9186b08a3826ca62)
+        ;
+
+        
+    
+    
+            marker_0b7623148e3e4d4cbb820dc992339133.bindTooltip(
+                `<div>
+                     交大-健身房站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f50c32c2bf4417389c929a3eb1ec8fb = L.marker(
+                [24.7895612, 120.9973782],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_d24d3e8ddaec40ed94cfadb71c190983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f50c32c2bf4417389c929a3eb1ec8fb.setIcon(icon_d24d3e8ddaec40ed94cfadb71c190983);
+        
+    
+        var popup_b5ba98e466054195b2c7e2b3424c742b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc8e54b0e70f4a7f96ff1e384f0cd7fc = $(`<div id="html_bc8e54b0e70f4a7f96ff1e384f0cd7fc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">交大-二餐前門站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">交大-二餐前門站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">LM__09</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7895612</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9973782</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_b5ba98e466054195b2c7e2b3424c742b.setContent(html_bc8e54b0e70f4a7f96ff1e384f0cd7fc);
+        
+
+        marker_7f50c32c2bf4417389c929a3eb1ec8fb.bindPopup(popup_b5ba98e466054195b2c7e2b3424c742b)
+        ;
+
+        
+    
+    
+            marker_7f50c32c2bf4417389c929a3eb1ec8fb.bindTooltip(
+                `<div>
+                     交大-二餐前門站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7260ff6f66614d9996817f0659c90d5c = L.marker(
+                [24.79668, 120.9957623],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_8d476451ee4e49579a7fdb97334b68a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7260ff6f66614d9996817f0659c90d5c.setIcon(icon_8d476451ee4e49579a7fdb97334b68a2);
+        
+    
+        var popup_e0c1eb95f9644a669aaee385cc4e727e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3506941c8b0460a93c23b8e3771dc05 = $(`<div id="html_b3506941c8b0460a93c23b8e3771dc05" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-化學館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-化學館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_01</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.79668</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9957623</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_e0c1eb95f9644a669aaee385cc4e727e.setContent(html_b3506941c8b0460a93c23b8e3771dc05);
+        
+
+        marker_7260ff6f66614d9996817f0659c90d5c.bindPopup(popup_e0c1eb95f9644a669aaee385cc4e727e)
+        ;
+
+        
+    
+    
+            marker_7260ff6f66614d9996817f0659c90d5c.bindTooltip(
+                `<div>
+                     清大-化學館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7c7ce91500643f6a859110d26454ee6 = L.marker(
+                [24.7954248, 120.9933298],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_a229b575336c4798a8ff1d9c2310879b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a7c7ce91500643f6a859110d26454ee6.setIcon(icon_a229b575336c4798a8ff1d9c2310879b);
+        
+    
+        var popup_ddc97ce6b4df460ab79c763989605ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc71c59724aa4dd897f77ed3917c0594 = $(`<div id="html_bc71c59724aa4dd897f77ed3917c0594" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-綜合三館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-綜合三館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_02</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7954248</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9933298</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_ddc97ce6b4df460ab79c763989605ea8.setContent(html_bc71c59724aa4dd897f77ed3917c0594);
+        
+
+        marker_a7c7ce91500643f6a859110d26454ee6.bindPopup(popup_ddc97ce6b4df460ab79c763989605ea8)
+        ;
+
+        
+    
+    
+            marker_a7c7ce91500643f6a859110d26454ee6.bindTooltip(
+                `<div>
+                     清大-綜合三館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf1cedf9218b43e6898dde605ebf8ec2 = L.marker(
+                [24.797997, 120.9907221],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_97e94ad33fe8468484fbaf4d4d53afd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_bf1cedf9218b43e6898dde605ebf8ec2.setIcon(icon_97e94ad33fe8468484fbaf4d4d53afd5);
+        
+    
+        var popup_f0f898f1188842618b0e86fe3493bb7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40bca0834e5c4d0896b814641c9ee95b = $(`<div id="html_40bca0834e5c4d0896b814641c9ee95b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-清華會館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-清華會館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_03</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">4</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.797997</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9907221</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_f0f898f1188842618b0e86fe3493bb7c.setContent(html_40bca0834e5c4d0896b814641c9ee95b);
+        
+
+        marker_bf1cedf9218b43e6898dde605ebf8ec2.bindPopup(popup_f0f898f1188842618b0e86fe3493bb7c)
+        ;
+
+        
+    
+    
+            marker_bf1cedf9218b43e6898dde605ebf8ec2.bindTooltip(
+                `<div>
+                     清大-清華會館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15c36e132eba4b5a8e70439c0ad0dac2 = L.marker(
+                [24.7918317, 120.9957063],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_7e5c58036e3a4f37b8f78bd8df8e3037 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_15c36e132eba4b5a8e70439c0ad0dac2.setIcon(icon_7e5c58036e3a4f37b8f78bd8df8e3037);
+        
+    
+        var popup_b195e54d8d3549dca72e68b2dc54ce26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6b3ceb6c7844148b2008192778d054f = $(`<div id="html_f6b3ceb6c7844148b2008192778d054f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-仁齋站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-仁齋站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_04</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7918317</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9957063</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_b195e54d8d3549dca72e68b2dc54ce26.setContent(html_f6b3ceb6c7844148b2008192778d054f);
+        
+
+        marker_15c36e132eba4b5a8e70439c0ad0dac2.bindPopup(popup_b195e54d8d3549dca72e68b2dc54ce26)
+        ;
+
+        
+    
+    
+            marker_15c36e132eba4b5a8e70439c0ad0dac2.bindTooltip(
+                `<div>
+                     清大-仁齋站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0a560824f704d3a9c843f7e42537de7 = L.marker(
+                [24.7918969, 120.9921752],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_ce410a34040440cf9fed6e9007e69307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b0a560824f704d3a9c843f7e42537de7.setIcon(icon_ce410a34040440cf9fed6e9007e69307);
+        
+    
+        var popup_27ec32f86f5345ffa55b075101eb45e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c341cbadafd54f00a0b8878bde88fd0d = $(`<div id="html_c341cbadafd54f00a0b8878bde88fd0d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-駐警隊站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-駐警隊站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_05</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">8</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.7918969</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.9921752</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_27ec32f86f5345ffa55b075101eb45e2.setContent(html_c341cbadafd54f00a0b8878bde88fd0d);
+        
+
+        marker_b0a560824f704d3a9c843f7e42537de7.bindPopup(popup_27ec32f86f5345ffa55b075101eb45e2)
+        ;
+
+        
+    
+    
+            marker_b0a560824f704d3a9c843f7e42537de7.bindTooltip(
+                `<div>
+                     清大-駐警隊站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d164647ec7074a8cbedca5408a381ae4 = L.marker(
+                [24.79229, 120.991623],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_4ec74fc67fd74806b27d4f196e16d153 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d164647ec7074a8cbedca5408a381ae4.setIcon(icon_4ec74fc67fd74806b27d4f196e16d153);
+        
+    
+        var popup_b81fc10a28c84c1cb22179cf7852fb66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8f923f2b18f44c98d2f186b7127dd58 = $(`<div id="html_e8f923f2b18f44c98d2f186b7127dd58" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">清大-女宿站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">清大-女宿站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">TH_06</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">4</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.79229</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">120.991623</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_b81fc10a28c84c1cb22179cf7852fb66.setContent(html_e8f923f2b18f44c98d2f186b7127dd58);
+        
+
+        marker_d164647ec7074a8cbedca5408a381ae4.bindPopup(popup_b81fc10a28c84c1cb22179cf7852fb66)
+        ;
+
+        
+    
+    
+            marker_d164647ec7074a8cbedca5408a381ae4.bindTooltip(
+                `<div>
+                     清大-女宿站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07ae2519d019423e86efd13a1e7c78f7 = L.marker(
+                [24.9659344, 121.1955573],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_8a58a84bfde342ec91f7e7790e7226a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_07ae2519d019423e86efd13a1e7c78f7.setIcon(icon_8a58a84bfde342ec91f7e7790e7226a4);
+        
+    
+        var popup_327504b03659458588a8e1cdf69222eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a687436e7fa4e51b51b59d73f8e95c8 = $(`<div id="html_9a687436e7fa4e51b51b59d73f8e95c8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-松果餐廳站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-松果餐廳站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_01</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9659344</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1955573</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_327504b03659458588a8e1cdf69222eb.setContent(html_9a687436e7fa4e51b51b59d73f8e95c8);
+        
+
+        marker_07ae2519d019423e86efd13a1e7c78f7.bindPopup(popup_327504b03659458588a8e1cdf69222eb)
+        ;
+
+        
+    
+    
+            marker_07ae2519d019423e86efd13a1e7c78f7.bindTooltip(
+                `<div>
+                     中央-松果餐廳站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5bec3fe1307481e830d7ec4cf372188 = L.marker(
+                [24.9659234, 121.1937157],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_6734b8231d5c4068a0fa4233206d0c5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e5bec3fe1307481e830d7ec4cf372188.setIcon(icon_6734b8231d5c4068a0fa4233206d0c5f);
+        
+    
+        var popup_c4860f149a3b4bd4905e086902ab588f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c774f6d41ee3448f9e61a51916e8f9b2 = $(`<div id="html_c774f6d41ee3448f9e61a51916e8f9b2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-宵夜街口站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-宵夜街口站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_02</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9659234</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1937157</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_c4860f149a3b4bd4905e086902ab588f.setContent(html_c774f6d41ee3448f9e61a51916e8f9b2);
+        
+
+        marker_e5bec3fe1307481e830d7ec4cf372188.bindPopup(popup_c4860f149a3b4bd4905e086902ab588f)
+        ;
+
+        
+    
+    
+            marker_e5bec3fe1307481e830d7ec4cf372188.bindTooltip(
+                `<div>
+                     中央-宵夜街口站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87b13d823ed84283af5dc4b193734060 = L.marker(
+                [24.9666608, 121.1925717],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_2ee38cb9af0845ef8654fcbdab61e422 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_87b13d823ed84283af5dc4b193734060.setIcon(icon_2ee38cb9af0845ef8654fcbdab61e422);
+        
+    
+        var popup_d6c614b7802d484fa1a64eafa1cd7c42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cffcb2bdfb84d9889402c0141e12089 = $(`<div id="html_6cffcb2bdfb84d9889402c0141e12089" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-女宿站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-女宿站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_03</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9666608</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1925717</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_d6c614b7802d484fa1a64eafa1cd7c42.setContent(html_6cffcb2bdfb84d9889402c0141e12089);
+        
+
+        marker_87b13d823ed84283af5dc4b193734060.bindPopup(popup_d6c614b7802d484fa1a64eafa1cd7c42)
+        ;
+
+        
+    
+    
+            marker_87b13d823ed84283af5dc4b193734060.bindTooltip(
+                `<div>
+                     中央-女宿站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a4eba22f29f4d22a0be73cd71a9f521 = L.marker(
+                [24.9668518, 121.1911102],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_370467a00aa24cb883af059d71718a2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2a4eba22f29f4d22a0be73cd71a9f521.setIcon(icon_370467a00aa24cb883af059d71718a2c);
+        
+    
+        var popup_fbff7e87f31447868d8edb85715e418c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90ea516059f54a50b3ce64ba9989287a = $(`<div id="html_90ea516059f54a50b3ce64ba9989287a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-松苑餐廳站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-松苑餐廳站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_04</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9668518</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1911102</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_fbff7e87f31447868d8edb85715e418c.setContent(html_90ea516059f54a50b3ce64ba9989287a);
+        
+
+        marker_2a4eba22f29f4d22a0be73cd71a9f521.bindPopup(popup_fbff7e87f31447868d8edb85715e418c)
+        ;
+
+        
+    
+    
+            marker_2a4eba22f29f4d22a0be73cd71a9f521.bindTooltip(
+                `<div>
+                     中央-松苑餐廳站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_864b9fac0e774db3bdb9a485c1c3c9ce = L.marker(
+                [24.9672827, 121.1879489],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_16dd9570fc394f9caf8e64b18e98b613 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_864b9fac0e774db3bdb9a485c1c3c9ce.setIcon(icon_16dd9570fc394f9caf8e64b18e98b613);
+        
+    
+        var popup_15891c6cc4c34efa87e04ec23672fbae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5851fda84c07468884ca8dd87621ce9e = $(`<div id="html_5851fda84c07468884ca8dd87621ce9e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-工程五館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-工程五館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_05</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9672827</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1879489</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_15891c6cc4c34efa87e04ec23672fbae.setContent(html_5851fda84c07468884ca8dd87621ce9e);
+        
+
+        marker_864b9fac0e774db3bdb9a485c1c3c9ce.bindPopup(popup_15891c6cc4c34efa87e04ec23672fbae)
+        ;
+
+        
+    
+    
+            marker_864b9fac0e774db3bdb9a485c1c3c9ce.bindTooltip(
+                `<div>
+                     中央-工程五館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e73a746be162485c9a537617fe7fc3dd = L.marker(
+                [24.9687155, 121.1911223],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_3ed5edf1fd6e4641888d19a4ad58da09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e73a746be162485c9a537617fe7fc3dd.setIcon(icon_3ed5edf1fd6e4641888d19a4ad58da09);
+        
+    
+        var popup_72f5a9732cf7409a90a727f8c784981e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2788b101b5f4442b399f32005f8957e = $(`<div id="html_e2788b101b5f4442b399f32005f8957e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-依仁堂站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-依仁堂站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_06</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9687155</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1911223</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_72f5a9732cf7409a90a727f8c784981e.setContent(html_e2788b101b5f4442b399f32005f8957e);
+        
+
+        marker_e73a746be162485c9a537617fe7fc3dd.bindPopup(popup_72f5a9732cf7409a90a727f8c784981e)
+        ;
+
+        
+    
+    
+            marker_e73a746be162485c9a537617fe7fc3dd.bindTooltip(
+                `<div>
+                     中央-依仁堂站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ad570366f344fd1a130f4434d831ec7 = L.marker(
+                [24.9699358, 121.1905419],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_a67c4edabbeb492d91d9ae70e41600c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2ad570366f344fd1a130f4434d831ec7.setIcon(icon_a67c4edabbeb492d91d9ae70e41600c4);
+        
+    
+        var popup_f88ed7026a5e4013aa2209d3041e9ebc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93e57a86068146418960c41c6d688336 = $(`<div id="html_93e57a86068146418960c41c6d688336" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-中大湖站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-中大湖站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_07</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">12</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9699358</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1905419</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_f88ed7026a5e4013aa2209d3041e9ebc.setContent(html_93e57a86068146418960c41c6d688336);
+        
+
+        marker_2ad570366f344fd1a130f4434d831ec7.bindPopup(popup_f88ed7026a5e4013aa2209d3041e9ebc)
+        ;
+
+        
+    
+    
+            marker_2ad570366f344fd1a130f4434d831ec7.bindTooltip(
+                `<div>
+                     中央-中大湖站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf430ec291e24cf89bc3d61d3e999232 = L.marker(
+                [24.970082, 121.1931906],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_19b98c78ebaf4cc5bab1c494901e3656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cf430ec291e24cf89bc3d61d3e999232.setIcon(icon_19b98c78ebaf4cc5bab1c494901e3656);
+        
+    
+        var popup_212d9cef22404350b5de979c26aaa1c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8752671dd9c84f14bd46ebc401aaf263 = $(`<div id="html_8752671dd9c84f14bd46ebc401aaf263" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-綜教館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-綜教館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_08</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.970082</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1931906</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_212d9cef22404350b5de979c26aaa1c1.setContent(html_8752671dd9c84f14bd46ebc401aaf263);
+        
+
+        marker_cf430ec291e24cf89bc3d61d3e999232.bindPopup(popup_212d9cef22404350b5de979c26aaa1c1)
+        ;
+
+        
+    
+    
+            marker_cf430ec291e24cf89bc3d61d3e999232.bindTooltip(
+                `<div>
+                     中央-綜教館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89f2effa260e451bab80b2a62d9e0215 = L.marker(
+                [24.9703628, 121.1952827],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_b85bfc66228b4fe4a7313e17ae441448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_89f2effa260e451bab80b2a62d9e0215.setIcon(icon_b85bfc66228b4fe4a7313e17ae441448);
+        
+    
+        var popup_5cf3de7f370a454aa3b6d37955f76c2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b37aea305ba4aa297ad69900981d974 = $(`<div id="html_8b37aea305ba4aa297ad69900981d974" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-男九舍站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-男九舍站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_09</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9703628</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1952827</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_5cf3de7f370a454aa3b6d37955f76c2c.setContent(html_8b37aea305ba4aa297ad69900981d974);
+        
+
+        marker_89f2effa260e451bab80b2a62d9e0215.bindPopup(popup_5cf3de7f370a454aa3b6d37955f76c2c)
+        ;
+
+        
+    
+    
+            marker_89f2effa260e451bab80b2a62d9e0215.bindTooltip(
+                `<div>
+                     中央-男九舍站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9d8527ca38c4adbb420952ccda18fc6 = L.marker(
+                [24.9682094, 121.1947],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_9b92985ede82428ba27b7fb9c88792ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b9d8527ca38c4adbb420952ccda18fc6.setIcon(icon_9b92985ede82428ba27b7fb9c88792ec);
+        
+    
+        var popup_ec475ed643524e64a941f10c9168748e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_924ca6faffd84514b4b42d2524db0d0c = $(`<div id="html_924ca6faffd84514b4b42d2524db0d0c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>中央大學路徑規劃測試圖</title> <h4 style="margin-bottom:10px; text-align:center">中央-圖書館站</h4> <meta http-equiv="refresh" content="600"> </head>     <table style="height: 126px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點名稱</span></td> <td style="width: 100px;background-color: #ABFFFF;">中央-圖書館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">站點代碼</span></td> <td style="width: 100px;background-color: #ABFFFF;">CY_10</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">柱數</span></td> <td style="width: 100px;background-color: #ABFFFF;">16</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 100px;background-color: #ABFFFF;">24.9682094</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 100px;background-color: #ABFFFF;">121.1947</td> </tr> </tbody> </table>  </html> </div>`)[0];
+            popup_ec475ed643524e64a941f10c9168748e.setContent(html_924ca6faffd84514b4b42d2524db0d0c);
+        
+
+        marker_b9d8527ca38c4adbb420952ccda18fc6.bindPopup(popup_ec475ed643524e64a941f10c9168748e)
+        ;
+
+        
+    
+    
+            marker_b9d8527ca38c4adbb420952ccda18fc6.bindTooltip(
+                `<div>
+                     中央-圖書館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6adb8dcc835c44858eb2e596ed1cfb29 = L.marker(
+                [24.78767, 121.0018],
+                {}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+    
+            var icon_88c1952db1f5497ba62337b0791cd015 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6adb8dcc835c44858eb2e596ed1cfb29.setIcon(icon_88c1952db1f5497ba62337b0791cd015);
+        
+    
+        var popup_b353ba1f71494aa8bda2fdb68b615378 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2c2378e0d5b4dbf9e73f73fdc2fb622 = $(`<div id="html_c2c2378e0d5b4dbf9e73f73fdc2fb622" style="width: 100.0%; height: 100.0%;">D棚站</div>`)[0];
+            popup_b353ba1f71494aa8bda2fdb68b615378.setContent(html_c2c2378e0d5b4dbf9e73f73fdc2fb622);
+        
+
+        marker_6adb8dcc835c44858eb2e596ed1cfb29.bindPopup(popup_b353ba1f71494aa8bda2fdb68b615378)
+        ;
+
+        
+    
+    
+            marker_6adb8dcc835c44858eb2e596ed1cfb29.bindTooltip(
+                `<div>
+                     D棚站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_8925680dd20c4ddd818e497ad21c88a9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8925680dd20c4ddd818e497ad21c88a9 = L.geoJson(null, {
+                onEachFeature: geo_json_8925680dd20c4ddd818e497ad21c88a9_onEachFeature,
+            
+        });
+
+        function geo_json_8925680dd20c4ddd818e497ad21c88a9_add (data) {
+            geo_json_8925680dd20c4ddd818e497ad21c88a9
+                .addData(data)
+                .addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        }
+            geo_json_8925680dd20c4ddd818e497ad21c88a9_add({"bbox": [121.187936, 24.965878, 121.195469, 24.970401], "features": [{"bbox": [121.187936, 24.965878, 121.195469, 24.970401], "geometry": {"coordinates": [[121.195469, 24.965955], [121.195447, 24.965878], [121.195383, 24.965878], [121.195157, 24.965882], [121.194674, 24.965882], [121.194374, 24.965884], [121.194302, 24.965885], [121.193716, 24.965887], [121.193591, 24.965888], [121.193589, 24.966293], [121.193586, 24.9667], [121.19358, 24.966754], [121.193575, 24.966792], [121.19328, 24.966791], [121.193194, 24.96679], [121.192658, 24.966786], [121.192654, 24.966659], [121.192658, 24.966786], [121.192113, 24.966783], [121.192114, 24.966946], [121.19111, 24.966949], [121.19111, 24.966916], [121.191109, 24.966852], [121.19111, 24.966916], [121.19111, 24.966949], [121.191115, 24.967398], [121.190888, 24.967401], [121.190719, 24.967403], [121.190491, 24.967406], [121.190408, 24.967407], [121.189944, 24.967413], [121.189277, 24.967422], [121.189064, 24.967425], [121.188724, 24.96743], [121.187997, 24.967441], [121.18795, 24.967441], [121.187947, 24.967412], [121.187936, 24.967284], [121.187947, 24.967412], [121.18795, 24.967441], [121.187997, 24.967441], [121.188724, 24.96743], [121.189064, 24.967425], [121.189277, 24.967422], [121.189944, 24.967413], [121.190408, 24.967407], [121.190491, 24.967406], [121.190719, 24.967403], [121.190888, 24.967401], [121.191115, 24.967398], [121.191118, 24.967676], [121.191121, 24.967959], [121.191129, 24.968706], [121.191129, 24.968715], [121.191131, 24.968896], [121.191141, 24.969877], [121.190813, 24.969875], [121.190542, 24.969873], [121.190813, 24.969875], [121.191141, 24.969877], [121.191218, 24.969877], [121.191344, 24.969877], [121.191553, 24.969877], [121.191578, 24.969877], [121.191745, 24.969877], [121.191915, 24.969877], [121.191945, 24.969877], [121.192548, 24.969877], [121.193161, 24.969877], [121.193237, 24.969877], [121.193238, 24.970117], [121.193191, 24.970117], [121.193238, 24.970117], [121.193237, 24.969877], [121.193334, 24.969877], [121.193974, 24.969879], [121.194004, 24.969877], [121.194378, 24.969876], [121.194648, 24.969877], [121.195235, 24.969877], [121.195286, 24.969877], [121.195286, 24.970221], [121.195286, 24.970363], [121.195286, 24.970378], [121.194638, 24.970401], [121.194641, 24.970245], [121.194648, 24.969877], [121.194378, 24.969876], [121.194004, 24.969877], [121.194021, 24.969788], [121.19402, 24.969718], [121.194027, 24.969207], [121.194028, 24.969126], [121.194016, 24.968925], [121.194014, 24.968672], [121.194798, 24.968655], [121.194786, 24.968208]], "type": "LineString"}, "properties": {"segments": [{"distance": 183.4, "duration": 82.5, "steps": [{"distance": 183.4, "duration": 82.5, "instruction": "Head south", "name": "-", "type": 11, "way_points": [0, 7]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [7, 7]}]}, {"distance": 220.0, "duration": 46.6, "steps": [{"distance": 12.6, "duration": 5.7, "instruction": "Head west", "name": "-", "type": 11, "way_points": [7, 8]}, {"distance": 100.7, "duration": 20.1, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [8, 12]}, {"distance": 92.5, "duration": 18.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [12, 15]}, {"distance": 14.2, "duration": 2.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [15, 16]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [16, 16]}]}, {"distance": 199.4, "duration": 35.0, "steps": [{"distance": 14.2, "duration": 2.3, "instruction": "Head north", "name": "-", "type": 11, "way_points": [16, 17]}, {"distance": 54.9, "duration": 11.0, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [17, 18]}, {"distance": 18.1, "duration": 3.0, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [18, 19]}, {"distance": 101.2, "duration": 16.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [19, 20]}, {"distance": 10.8, "duration": 2.2, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [20, 22]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [22, 22]}]}, {"distance": 397.4, "duration": 67.2, "steps": [{"distance": 60.7, "duration": 12.1, "instruction": "Head north", "name": "-", "type": 11, "way_points": [22, 25]}, {"distance": 319.1, "duration": 52.2, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [25, 35]}, {"distance": 17.6, "duration": 2.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [35, 37]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [37, 37]}]}, {"distance": 483.2, "duration": 84.4, "steps": [{"distance": 17.6, "duration": 2.9, "instruction": "Head north", "name": "-", "type": 11, "way_points": [37, 39]}, {"distance": 319.1, "duration": 52.2, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [39, 49]}, {"distance": 146.5, "duration": 29.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [49, 53]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [53, 53]}]}, {"distance": 189.5, "duration": 35.7, "steps": [{"distance": 129.2, "duration": 25.8, "instruction": "Head north", "name": "-", "type": 11, "way_points": [53, 55]}, {"distance": 60.4, "duration": 9.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [55, 57]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [57, 57]}]}, {"distance": 303.1, "duration": 58.5, "steps": [{"distance": 271.7, "duration": 52.1, "instruction": "Head east", "name": "-", "type": 11, "way_points": [57, 69]}, {"distance": 26.7, "duration": 5.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [69, 70]}, {"distance": 4.8, "duration": 1.1, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [70, 71]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [71, 71]}]}, {"distance": 292.0, "duration": 58.5, "steps": [{"distance": 4.8, "duration": 1.1, "instruction": "Head east", "name": "-", "type": 11, "way_points": [71, 72]}, {"distance": 26.7, "duration": 5.3, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [72, 73]}, {"distance": 206.6, "duration": 41.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [73, 80]}, {"distance": 54.0, "duration": 10.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [80, 82]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [82, 82]}]}, {"distance": 453.2, "duration": 81.1, "steps": [{"distance": 1.7, "duration": 0.3, "instruction": "Head north", "name": "-", "type": 11, "way_points": [82, 83]}, {"distance": 65.4, "duration": 13.1, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [83, 84]}, {"distance": 58.2, "duration": 11.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [84, 86]}, {"distance": 64.9, "duration": 13.0, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [86, 88]}, {"distance": 134.2, "duration": 22.0, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [88, 94]}, {"distance": 79.0, "duration": 12.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [94, 95]}, {"distance": 49.8, "duration": 8.2, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [95, 96]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [96, 96]}]}], "summary": {"distance": 2721.2, "duration": 549.5}, "way_points": [0, 7, 16, 22, 37, 53, 57, 71, 82, 96]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2023-02-27T01:00:29Z", "graph_date": "2023-04-04T09:44:17Z", "version": "6.8.1"}, "query": {"coordinates": [[121.1955573, 24.9659344], [121.1937157, 24.9659234], [121.1925717, 24.9666608], [121.1911102, 24.9668518], [121.1879489, 24.9672827], [121.1911223, 24.9687155], [121.1905419, 24.9699358], [121.1931906, 24.970082], [121.1952827, 24.9703628], [121.1947, 24.9682094]], "format": "geojson", "instructions_format": "text", "profile": "cycling-electric"}, "service": "routing", "timestamp": 1682490714447}, "type": "FeatureCollection"});
+
+        
+    
+
+        function geo_json_76b45ebafab442f19b8e3347c5dded9d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_76b45ebafab442f19b8e3347c5dded9d = L.geoJson(null, {
+                onEachFeature: geo_json_76b45ebafab442f19b8e3347c5dded9d_onEachFeature,
+            
+        });
+
+        function geo_json_76b45ebafab442f19b8e3347c5dded9d_add (data) {
+            geo_json_76b45ebafab442f19b8e3347c5dded9d
+                .addData(data)
+                .addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        }
+            geo_json_76b45ebafab442f19b8e3347c5dded9d_add({"bbox": [121.188061, 24.957257, 121.204084, 24.970401], "features": [{"bbox": [121.188061, 24.957257, 121.204084, 24.970401], "geometry": {"coordinates": [[121.196161, 24.965432], [121.195867, 24.965141], [121.195685, 24.964924], [121.1955, 24.964752], [121.195076, 24.964244], [121.194788, 24.963702], [121.194643, 24.963502], [121.19458, 24.963405], [121.194416, 24.963621], [121.194184, 24.963925], [121.19401, 24.964202], [121.193923, 24.964341], [121.193756, 24.964605], [121.193682, 24.96471], [121.1936, 24.964823], [121.193596, 24.965481], [121.1936, 24.964823], [121.193682, 24.96471], [121.193756, 24.964605], [121.193923, 24.964341], [121.19401, 24.964202], [121.194184, 24.963925], [121.194416, 24.963621], [121.19458, 24.963405], [121.194957, 24.962909], [121.195234, 24.962545], [121.195391, 24.962338], [121.195574, 24.961805], [121.1958, 24.961323], [121.196041, 24.960695], [121.196431, 24.959766], [121.196457, 24.959704], [121.196494, 24.959628], [121.199055, 24.96137], [121.200928, 24.962489], [121.200981, 24.962521], [121.201068, 24.962586], [121.201302, 24.96276], [121.201718, 24.963174], [121.202214, 24.96384], [121.202646, 24.964293], [121.203745, 24.965309], [121.203888, 24.965442], [121.204084, 24.965739], [121.204073, 24.965791], [121.203919, 24.966041], [121.203885, 24.966088], [121.20323, 24.967058], [121.203208, 24.967101], [121.202689, 24.968229], [121.200813, 24.968245], [121.199584, 24.968259], [121.1989, 24.968269], [121.198026, 24.968267], [121.197998, 24.968267], [121.197811, 24.968269], [121.19712, 24.968276], [121.19698, 24.968277], [121.196946, 24.968278], [121.1969, 24.968279], [121.196582, 24.968282], [121.196481, 24.968375], [121.196395, 24.968572], [121.196377, 24.968766], [121.196367, 24.968851], [121.196316, 24.968938], [121.196244, 24.968993], [121.196153, 24.969023], [121.19602, 24.969012], [121.195939, 24.968971], [121.195854, 24.96886], [121.195824, 24.968348], [121.195822, 24.968298], [121.195634, 24.968307], [121.195454, 24.968308], [121.195454, 24.968229], [121.195459, 24.967935], [121.195474, 24.967015], [121.195478, 24.966805], [121.194536, 24.966799], [121.194004, 24.966795], [121.193575, 24.966792], [121.19328, 24.966791], [121.193194, 24.96679], [121.192658, 24.966786], [121.192654, 24.966659], [121.192658, 24.966786], [121.192113, 24.966783], [121.191108, 24.966777], [121.191109, 24.966852], [121.191108, 24.966777], [121.192113, 24.966783], [121.192658, 24.966786], [121.193194, 24.96679], [121.19328, 24.966791], [121.193575, 24.966792], [121.194004, 24.966795], [121.194536, 24.966799], [121.195478, 24.966805], [121.195474, 24.967015], [121.195459, 24.967935], [121.195454, 24.968229], [121.195617, 24.968234], [121.19582, 24.968225], [121.19584, 24.967793], [121.195864, 24.967669], [121.195901, 24.967615], [121.195985, 24.967554], [121.19608, 24.967528], [121.196176, 24.967533], [121.196204, 24.96754], [121.196331, 24.967628], [121.196374, 24.967714], [121.196402, 24.967939], [121.196488, 24.968207], [121.196582, 24.968282], [121.1969, 24.968279], [121.196946, 24.968278], [121.19698, 24.968277], [121.19712, 24.968276], [121.197811, 24.968269], [121.197998, 24.968267], [121.198026, 24.968267], [121.198897, 24.968249], [121.199579, 24.968239], [121.200802, 24.968222], [121.202689, 24.968229], [121.203208, 24.967101], [121.20323, 24.967058], [121.203885, 24.966088], [121.203919, 24.966041], [121.204073, 24.965791], [121.204084, 24.965739], [121.203614, 24.96531], [121.202585, 24.964339], [121.202131, 24.963866], [121.201625, 24.96321], [121.201228, 24.962811], [121.201003, 24.962656], [121.200883, 24.962573], [121.199002, 24.961446], [121.197288, 24.96025], [121.196457, 24.959704], [121.195797, 24.959226], [121.195069, 24.958326], [121.194502, 24.957645], [121.194295, 24.957423], [121.194119, 24.957493], [121.193972, 24.957555], [121.193307, 24.958017], [121.193067, 24.958183], [121.192573, 24.958529], [121.192182, 24.958801], [121.192121, 24.958849], [121.192045, 24.958917], [121.191957, 24.958972], [121.191793, 24.959133], [121.1917, 24.95932], [121.191658, 24.95952], [121.19164, 24.959835], [121.191594, 24.960111], [121.191485, 24.960281], [121.191345, 24.960395], [121.191202, 24.960441], [121.191133, 24.960467], [121.190868, 24.960477], [121.19029, 24.9604], [121.189995, 24.960367], [121.189984, 24.960552], [121.190002, 24.960802], [121.1901, 24.96116], [121.190209, 24.961528], [121.190339, 24.96192], [121.190525, 24.962686], [121.190582, 24.962969], [121.190721, 24.963612], [121.190735, 24.963652], [121.19069, 24.963854], [121.190572, 24.964227], [121.190731, 24.964562], [121.190873, 24.964813], [121.19091, 24.964877], [121.190977, 24.965061], [121.191012, 24.965152], [121.191086, 24.965522], [121.191098, 24.965581], [121.19077, 24.965718], [121.190696, 24.965916], [121.190627, 24.96601], [121.190552, 24.966067], [121.189865, 24.966325], [121.189567, 24.966516], [121.189376, 24.966555], [121.188463, 24.966283], [121.188193, 24.966259], [121.188061, 24.966247], [121.188193, 24.966259], [121.188463, 24.966283], [121.189376, 24.966555], [121.189567, 24.966516], [121.189865, 24.966325], [121.190552, 24.966067], [121.190627, 24.96601], [121.190696, 24.965916], [121.19077, 24.965718], [121.191098, 24.965581], [121.191086, 24.965522], [121.191012, 24.965152], [121.190977, 24.965061], [121.19091, 24.964877], [121.190873, 24.964813], [121.190731, 24.964562], [121.190572, 24.964227], [121.19069, 24.963854], [121.190735, 24.963652], [121.190721, 24.963612], [121.190582, 24.962969], [121.190525, 24.962686], [121.190339, 24.96192], [121.190209, 24.961528], [121.1901, 24.96116], [121.190002, 24.960802], [121.189984, 24.960552], [121.189995, 24.960367], [121.19029, 24.9604], [121.190848, 24.960406], [121.191041, 24.960413], [121.191242, 24.960359], [121.191397, 24.960244], [121.19149, 24.960059], [121.191525, 24.959834], [121.191535, 24.959496], [121.191597, 24.959237], [121.191712, 24.95905], [121.192058, 24.958759], [121.19211, 24.958715], [121.192297, 24.958607], [121.193, 24.958108], [121.193249, 24.957931], [121.194034, 24.957375], [121.194197, 24.957309], [121.194326, 24.957257], [121.194417, 24.957368], [121.19466, 24.957671], [121.195839, 24.95914], [121.196494, 24.959628], [121.199055, 24.96137], [121.200928, 24.962489], [121.200981, 24.962521], [121.201068, 24.962586], [121.201302, 24.96276], [121.201718, 24.963174], [121.202214, 24.96384], [121.202646, 24.964293], [121.203745, 24.965309], [121.203888, 24.965442], [121.204084, 24.965739], [121.204073, 24.965791], [121.203919, 24.966041], [121.203885, 24.966088], [121.20323, 24.967058], [121.203208, 24.967101], [121.202689, 24.968229], [121.200813, 24.968245], [121.199584, 24.968259], [121.1989, 24.968269], [121.198026, 24.968267], [121.197998, 24.968267], [121.197811, 24.968269], [121.19712, 24.968276], [121.19698, 24.968277], [121.196946, 24.968278], [121.1969, 24.968279], [121.196582, 24.968282], [121.196481, 24.968375], [121.196395, 24.968572], [121.196377, 24.968766], [121.196367, 24.968851], [121.196316, 24.968938], [121.196244, 24.968993], [121.196153, 24.969023], [121.19602, 24.969012], [121.195939, 24.968971], [121.195854, 24.96886], [121.195824, 24.968348], [121.195822, 24.968298], [121.195634, 24.968307], [121.195454, 24.968308], [121.195453, 24.968353], [121.195448, 24.968602], [121.195447, 24.968649], [121.195446, 24.969761], [121.195446, 24.969877], [121.195286, 24.969877], [121.195235, 24.969877], [121.194648, 24.969877], [121.194378, 24.969876], [121.193334, 24.969877], [121.193237, 24.969877], [121.193161, 24.969877], [121.192548, 24.969877], [121.191945, 24.969877], [121.191141, 24.969877], [121.191129, 24.968715], [121.191141, 24.969877], [121.191945, 24.969877], [121.192548, 24.969877], [121.193161, 24.969877], [121.193237, 24.969877], [121.193238, 24.970082], [121.193237, 24.969877], [121.193334, 24.969877], [121.194378, 24.969876], [121.194648, 24.969877], [121.195235, 24.969877], [121.195286, 24.969877], [121.195286, 24.970221], [121.195286, 24.970363], [121.195286, 24.970378], [121.194638, 24.970401], [121.194641, 24.970245], [121.194648, 24.969877], [121.195235, 24.969877], [121.195286, 24.969877], [121.195446, 24.969877], [121.195446, 24.969761], [121.195447, 24.968649], [121.195448, 24.968602], [121.195453, 24.968353], [121.195454, 24.968308], [121.195454, 24.968229], [121.195454, 24.96822]], "type": "LineString"}, "properties": {"extras": {"roadaccessrestrictions": {"summary": [{"amount": 93.3, "distance": 13700.0, "value": 0.0}, {"amount": 6.7, "distance": 984.3, "value": 1.0}], "values": [[0, 7, 0], [7, 32, 1], [32, 331, 0]]}}, "segments": [{"distance": 537.8, "duration": 129.1, "steps": [{"distance": 278.4, "duration": 66.8, "instruction": "Head southwest", "name": "-", "type": 11, "way_points": [0, 7]}, {"distance": 186.3, "duration": 44.7, "instruction": "Turn sharp right onto \u4e94\u8208\u8def", "name": "\u4e94\u8208\u8def", "type": 3, "way_points": [7, 14]}, {"distance": 73.1, "duration": 17.6, "instruction": "Turn slight right onto \u4e94\u8208\u8def", "name": "\u4e94\u8208\u8def", "type": 5, "way_points": [14, 15]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at \u4e94\u8208\u8def, on the right", "name": "-", "type": 10, "way_points": [15, 15]}]}, {"distance": 3387.8, "duration": 442.1, "steps": [{"distance": 73.1, "duration": 17.6, "instruction": "Head south on \u4e94\u8208\u8def", "name": "\u4e94\u8208\u8def", "type": 11, "way_points": [15, 16]}, {"distance": 651.8, "duration": 156.4, "instruction": "Turn slight left onto \u4e94\u8208\u8def", "name": "\u4e94\u8208\u8def", "type": 4, "way_points": [16, 32]}, {"distance": 1032.8, "duration": 74.4, "instruction": "Turn sharp left onto \u4e09\u6c11\u8def\u4e00\u6bb5", "name": "\u4e09\u6c11\u8def\u4e00\u6bb5", "type": 2, "way_points": [32, 43]}, {"distance": 311.6, "duration": 22.4, "instruction": "Turn slight left onto \u4e2d\u6b63\u8def, 112", "name": "\u4e2d\u6b63\u8def, 112", "type": 4, "way_points": [43, 49]}, {"distance": 653.7, "duration": 77.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [49, 62]}, {"distance": 199.2, "duration": 28.4, "exit_number": 2, "instruction": "Enter the roundabout and take the 2nd exit", "name": "-", "type": 7, "way_points": [62, 74]}, {"distance": 451.4, "duration": 63.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [74, 84]}, {"distance": 14.2, "duration": 1.7, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [84, 85]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [85, 85]}]}, {"distance": 178.9, "duration": 21.5, "steps": [{"distance": 14.2, "duration": 1.7, "instruction": "Head north", "name": "-", "type": 11, "way_points": [85, 86]}, {"distance": 164.6, "duration": 19.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [86, 89]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [89, 89]}]}, {"distance": 4694.1, "duration": 490.3, "steps": [{"distance": 607.3, "duration": 82.0, "instruction": "Head south", "name": "-", "type": 11, "way_points": [89, 101]}, {"distance": 36.9, "duration": 8.9, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [101, 103]}, {"distance": 198.1, "duration": 29.0, "exit_number": 2, "instruction": "Enter the roundabout and take the 2nd exit", "name": "-", "type": 7, "way_points": [103, 115]}, {"distance": 615.7, "duration": 72.4, "instruction": "Turn slight right onto \u4e2d\u5927\u8def", "name": "\u4e2d\u5927\u8def", "type": 5, "way_points": [115, 126]}, {"distance": 311.6, "duration": 22.4, "instruction": "Turn right onto \u4e2d\u6b63\u8def, 112", "name": "\u4e2d\u6b63\u8def, 112", "type": 1, "way_points": [126, 132]}, {"distance": 1332.1, "duration": 95.9, "instruction": "Turn right onto \u4e09\u6c11\u8def\u4e00\u6bb5", "name": "\u4e09\u6c11\u8def\u4e00\u6bb5", "type": 1, "way_points": [132, 145]}, {"distance": 32.3, "duration": 2.3, "instruction": "Continue straight onto \u4e09\u6c11\u8def\u4e00\u6bb5", "name": "\u4e09\u6c11\u8def\u4e00\u6bb5", "type": 6, "way_points": [145, 146]}, {"distance": 608.1, "duration": 45.0, "instruction": "Turn right onto \u6c11\u65cf\u8def\u4e09\u6bb5, 114", "name": "\u6c11\u65cf\u8def\u4e09\u6bb5, 114", "type": 1, "way_points": [146, 167]}, {"distance": 600.9, "duration": 48.1, "instruction": "Turn right onto \u4e2d\u592e\u8def", "name": "\u4e2d\u592e\u8def", "type": 1, "way_points": [167, 185]}, {"distance": 351.1, "duration": 84.3, "instruction": "Turn left onto \u4e2d\u592e\u8def", "name": "\u4e2d\u592e\u8def", "type": 0, "way_points": [185, 195]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at \u4e2d\u592e\u8def, on the right", "name": "-", "type": 10, "way_points": [195, 195]}]}, {"distance": 4848.9, "duration": 506.5, "steps": [{"distance": 351.1, "duration": 84.3, "instruction": "Head east on \u4e2d\u592e\u8def", "name": "\u4e2d\u592e\u8def", "type": 11, "way_points": [195, 205]}, {"distance": 600.9, "duration": 48.1, "instruction": "Turn right onto \u4e2d\u592e\u8def", "name": "\u4e2d\u592e\u8def", "type": 1, "way_points": [205, 223]}, {"distance": 617.4, "duration": 45.6, "instruction": "Turn left onto \u6c11\u65cf\u8def\u4e09\u6bb5, 114", "name": "\u6c11\u65cf\u8def\u4e09\u6bb5, 114", "type": 0, "way_points": [223, 241]}, {"distance": 1377.3, "duration": 105.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [241, 256]}, {"distance": 311.6, "duration": 22.4, "instruction": "Turn slight left onto \u4e2d\u6b63\u8def, 112", "name": "\u4e2d\u6b63\u8def, 112", "type": 4, "way_points": [256, 262]}, {"distance": 653.7, "duration": 77.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [262, 275]}, {"distance": 199.2, "duration": 28.4, "exit_number": 2, "instruction": "Enter the roundabout and take the 2nd exit", "name": "-", "type": 7, "way_points": [275, 287]}, {"distance": 174.5, "duration": 25.1, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [287, 292]}, {"distance": 563.1, "duration": 69.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [292, 303]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [303, 303]}]}, {"distance": 129.2, "duration": 15.5, "steps": [{"distance": 129.2, "duration": 15.5, "instruction": "Head north", "name": "-", "type": 11, "way_points": [303, 304]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [304, 304]}]}, {"distance": 234.1, "duration": 28.1, "steps": [{"distance": 211.3, "duration": 25.4, "instruction": "Head east", "name": "-", "type": 11, "way_points": [304, 308]}, {"distance": 22.8, "duration": 2.7, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [308, 309]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [309, 309]}]}, {"distance": 283.4, "duration": 38.8, "steps": [{"distance": 22.8, "duration": 2.7, "instruction": "Head south", "name": "-", "type": 11, "way_points": [309, 310]}, {"distance": 206.6, "duration": 26.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [310, 315]}, {"distance": 54.0, "duration": 9.7, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [315, 317]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [317, 317]}]}, {"distance": 390.1, "duration": 63.9, "steps": [{"distance": 1.7, "duration": 0.3, "instruction": "Head north", "name": "-", "type": 11, "way_points": [317, 318]}, {"distance": 65.4, "duration": 9.4, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [318, 319]}, {"distance": 58.2, "duration": 16.0, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [319, 321]}, {"distance": 80.4, "duration": 11.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [321, 324]}, {"distance": 184.3, "duration": 26.5, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [324, 331]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [331, 331]}]}], "summary": {"distance": 14684.3, "duration": 1735.8}, "warnings": [{"code": 1, "message": "There may be restrictions on some roads"}], "way_points": [0, 15, 85, 89, 195, 303, 304, 309, 317, 331]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2023-02-27T01:00:29Z", "graph_date": "2023-04-02T15:44:32Z", "version": "6.8.1"}, "query": {"coordinates": [[121.1955573, 24.9659344], [121.1937157, 24.9659234], [121.1925717, 24.9666608], [121.1911102, 24.9668518], [121.1879489, 24.9672827], [121.1911223, 24.9687155], [121.1905419, 24.9699358], [121.1931906, 24.970082], [121.1952827, 24.9703628], [121.1947, 24.9682094]], "format": "geojson", "instructions_format": "text", "profile": "driving-car"}, "service": "routing", "timestamp": 1682490714788}, "type": "FeatureCollection"});
+
+        
+    
+
+        function geo_json_7771422696834f9697366d75bad9e18f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7771422696834f9697366d75bad9e18f = L.geoJson(null, {
+                onEachFeature: geo_json_7771422696834f9697366d75bad9e18f_onEachFeature,
+            
+        });
+
+        function geo_json_7771422696834f9697366d75bad9e18f_add (data) {
+            geo_json_7771422696834f9697366d75bad9e18f
+                .addData(data)
+                .addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        }
+            geo_json_7771422696834f9697366d75bad9e18f_add({"bbox": [121.187936, 24.965887, 121.195576, 24.970401], "features": [{"bbox": [121.187936, 24.965887, 121.195576, 24.970401], "geometry": {"coordinates": [[121.195469, 24.965955], [121.195557, 24.966275], [121.195576, 24.966345], [121.195528, 24.966571], [121.195478, 24.966805], [121.194536, 24.966799], [121.194004, 24.966795], [121.193575, 24.966792], [121.19358, 24.966754], [121.193586, 24.9667], [121.193589, 24.966293], [121.193591, 24.965888], [121.193716, 24.965887], [121.193591, 24.965888], [121.193589, 24.966293], [121.193586, 24.9667], [121.19358, 24.966754], [121.193575, 24.966792], [121.19328, 24.966791], [121.193194, 24.96679], [121.192658, 24.966786], [121.192654, 24.966659], [121.192658, 24.966786], [121.192113, 24.966783], [121.191108, 24.966777], [121.191109, 24.966852], [121.19111, 24.966916], [121.19111, 24.966949], [121.191115, 24.967398], [121.190888, 24.967401], [121.190719, 24.967403], [121.190491, 24.967406], [121.190408, 24.967407], [121.189944, 24.967413], [121.189277, 24.967422], [121.189064, 24.967425], [121.188724, 24.96743], [121.187997, 24.967441], [121.18795, 24.967441], [121.187947, 24.967412], [121.187936, 24.967284], [121.187947, 24.967412], [121.18795, 24.967441], [121.187997, 24.967441], [121.188724, 24.96743], [121.189064, 24.967425], [121.189277, 24.967422], [121.189944, 24.967413], [121.190408, 24.967407], [121.190491, 24.967406], [121.190719, 24.967403], [121.190888, 24.967401], [121.191115, 24.967398], [121.191118, 24.967676], [121.191121, 24.967959], [121.191129, 24.968706], [121.191129, 24.968715], [121.191131, 24.968896], [121.191141, 24.969877], [121.190813, 24.969875], [121.190542, 24.969873], [121.190813, 24.969875], [121.191141, 24.969877], [121.191218, 24.969877], [121.191344, 24.969877], [121.191553, 24.969877], [121.191578, 24.969877], [121.191745, 24.969877], [121.191915, 24.969877], [121.191945, 24.969877], [121.192548, 24.969877], [121.193161, 24.969877], [121.193237, 24.969877], [121.193238, 24.970117], [121.193191, 24.970117], [121.193238, 24.970117], [121.193237, 24.969877], [121.193334, 24.969877], [121.193974, 24.969879], [121.194004, 24.969877], [121.194378, 24.969876], [121.194648, 24.969877], [121.195235, 24.969877], [121.195286, 24.969877], [121.195286, 24.970221], [121.195286, 24.970363], [121.195286, 24.970378], [121.194638, 24.970401], [121.194641, 24.970245], [121.194648, 24.969877], [121.195235, 24.969877], [121.195286, 24.969877], [121.195446, 24.969877], [121.195446, 24.969761], [121.195447, 24.968649], [121.194984, 24.968653], [121.194798, 24.968655], [121.194786, 24.968208]], "type": "LineString"}, "properties": {"segments": [{"distance": 401.9, "duration": 118.3, "steps": [{"distance": 96.8, "duration": 58.1, "instruction": "Head north", "name": "-", "type": 11, "way_points": [0, 4]}, {"distance": 191.8, "duration": 34.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [4, 7]}, {"distance": 100.7, "duration": 18.1, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [7, 11]}, {"distance": 12.6, "duration": 7.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [11, 12]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [12, 12]}]}, {"distance": 220.0, "duration": 44.9, "steps": [{"distance": 12.6, "duration": 7.6, "instruction": "Head west", "name": "-", "type": 11, "way_points": [12, 13]}, {"distance": 100.7, "duration": 18.1, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [13, 17]}, {"distance": 92.5, "duration": 16.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [17, 20]}, {"distance": 14.2, "duration": 2.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [20, 21]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [21, 21]}]}, {"distance": 178.9, "duration": 32.2, "steps": [{"distance": 14.2, "duration": 2.6, "instruction": "Head north", "name": "-", "type": 11, "way_points": [21, 22]}, {"distance": 164.7, "duration": 29.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [22, 25]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [25, 25]}]}, {"distance": 397.4, "duration": 76.3, "steps": [{"distance": 60.7, "duration": 10.9, "instruction": "Head north", "name": "-", "type": 11, "way_points": [25, 28]}, {"distance": 319.1, "duration": 57.4, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [28, 38]}, {"distance": 17.6, "duration": 7.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [38, 40]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [40, 40]}]}, {"distance": 483.2, "duration": 91.7, "steps": [{"distance": 17.6, "duration": 7.9, "instruction": "Head north", "name": "-", "type": 11, "way_points": [40, 42]}, {"distance": 319.1, "duration": 57.4, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [42, 52]}, {"distance": 146.5, "duration": 26.4, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [52, 56]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [56, 56]}]}, {"distance": 189.5, "duration": 34.1, "steps": [{"distance": 129.2, "duration": 23.3, "instruction": "Head north", "name": "-", "type": 11, "way_points": [56, 58]}, {"distance": 60.4, "duration": 10.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [58, 60]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [60, 60]}]}, {"distance": 303.1, "duration": 62.3, "steps": [{"distance": 271.7, "duration": 48.9, "instruction": "Head east", "name": "-", "type": 11, "way_points": [60, 72]}, {"distance": 26.7, "duration": 4.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [72, 73]}, {"distance": 4.8, "duration": 8.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [73, 74]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [74, 74]}]}, {"distance": 292.0, "duration": 60.3, "steps": [{"distance": 4.8, "duration": 8.6, "instruction": "Head east", "name": "-", "type": 11, "way_points": [74, 75]}, {"distance": 26.7, "duration": 4.8, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [75, 76]}, {"distance": 206.6, "duration": 37.2, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [76, 83]}, {"distance": 54.0, "duration": 9.7, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [83, 85]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [85, 85]}]}, {"distance": 457.7, "duration": 113.5, "steps": [{"distance": 1.7, "duration": 0.3, "instruction": "Head north", "name": "-", "type": 11, "way_points": [85, 86]}, {"distance": 65.4, "duration": 11.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [86, 87]}, {"distance": 58.2, "duration": 10.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [87, 89]}, {"distance": 80.4, "duration": 14.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [89, 92]}, {"distance": 136.6, "duration": 24.6, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [92, 94]}, {"distance": 65.5, "duration": 29.5, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [94, 96]}, {"distance": 49.8, "duration": 22.4, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [96, 97]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [97, 97]}]}], "summary": {"distance": 2923.7, "duration": 633.6}, "way_points": [0, 12, 21, 25, 40, 56, 60, 74, 85, 97]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2023-02-27T01:00:29Z", "graph_date": "2023-04-04T19:44:15Z", "version": "6.8.1"}, "query": {"coordinates": [[121.1955573, 24.9659344], [121.1937157, 24.9659234], [121.1925717, 24.9666608], [121.1911102, 24.9668518], [121.1879489, 24.9672827], [121.1911223, 24.9687155], [121.1905419, 24.9699358], [121.1931906, 24.970082], [121.1952827, 24.9703628], [121.1947, 24.9682094]], "format": "geojson", "instructions_format": "text", "profile": "cycling-road"}, "service": "routing", "timestamp": 1682490715138}, "type": "FeatureCollection"});
+
+        
+    
+            var layer_control_2452412d02a849fb803383bd0d221855 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e3de734f0e8349578abac37747b9d51c,
+                },
+                overlays :  {
+                    "cycling-electric" : geo_json_8925680dd20c4ddd818e497ad21c88a9,
+                    "drivng" : geo_json_76b45ebafab442f19b8e3347c5dded9d,
+                    "cycling-road" : geo_json_7771422696834f9697366d75bad9e18f,
+                },
+            };
+            L.control.layers(
+                layer_control_2452412d02a849fb803383bd0d221855.base_layers,
+                layer_control_2452412d02a849fb803383bd0d221855.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f9522ed68eb440a784ca4ab4f3b64db9);
+        
+</script>
